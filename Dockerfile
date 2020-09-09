@@ -4,7 +4,7 @@
 
 FROM arm64v8/python:3-alpine
 #FROM aarch64/python:3.5-alpine
-MAINTAINER kev <noreply@easypi.pro>
+MAINTAINER falcon <me@cellmean.com>
 
 RUN set -xe \
     && apk add --no-cache ca-certificates \
