@@ -26,5 +26,4 @@ WORKDIR /data
 
 VOLUME ["/data"]
 ENTRYPOINT ["youtube-dl"]
-#CMD ["-o","/videos/%(title)s.%(ext)s","--write-sub","--write-auto-sub","--sub-lang","en","--convert-subs","srt"]
 CMD ["--help"]
