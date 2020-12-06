@@ -1,5 +1,6 @@
 #
-# Dockerfile for youtube-dl
+# Dockerfile for youtube-dl with ffmpeg support
+# falconchen/arm64v8-youtube-dl
 #
 
 FROM arm64v8/python:3-alpine
