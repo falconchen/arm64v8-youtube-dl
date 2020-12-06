@@ -1,5 +1,5 @@
 #
-# Dockerfile for youtube-dl with ffmpeg support
+# Docker for youtube-dl with ffmpeg supported
 # falconchen/arm64v8-youtube-dl
 #
 
