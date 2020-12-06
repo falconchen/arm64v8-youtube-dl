@@ -16,12 +16,14 @@ RUN set -xe \
     && mkdir -p /videos \
     && mkdir -p /audios
 
+COPY ./youtube-dl.conf /etc/youtube-dl.conf
+
 # Try to run it so we know it works
 RUN youtube-dl --version
 
 WORKDIR /data
 
-VOLUME ["/videos"]
-VOLUME ["/audios"]
-ENTRYPOINT ["youtube-dl","-o","/videos/%(title)s.%(ext)s","--write-sub","--write-auto-sub","--sub-lang","en","--convert-subs","srt"]
+VOLUME ["/data"]
+ENTRYPOINT ["youtube-dl"]
+#CMD ["-o","/videos/%(title)s.%(ext)s","--write-sub","--write-auto-sub","--sub-lang","en","--convert-subs","srt"]
 CMD ["--help"]

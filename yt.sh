@@ -1,3 +1,5 @@
 #!/bin/ash
-#docker run -it --rm -v /mnt/sda3/Youtube/video/:/videos falconchen/aarch64-youtube-dl $@
-docker run -i --rm -v /mnt/sda3/Youtube/video/:/videos falconchen/aarch64-youtube-dl $@
+
+localDir=/mnt/sda3/Youtube/video/`date +"%Y-%m-%d"`
+mkdir -p ${localDir} 2>/dev/null
+docker run -i --rm -v ${localDir}:/data falconchen/arm64-youtube-dl $@
