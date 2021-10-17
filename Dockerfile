@@ -12,7 +12,7 @@ RUN apt update -y \
     #&& pip install --upgrade pip \
     && python3 -m pip install --upgrade yt-dlp \
     && mkdir -p /videos \
-    && mkdir -p /audios
+    && mkdir -p /audios \
     && rm -rf /root/.cache/
 
 #COPY ./youtube-dl.conf /etc/youtube-dl.conf

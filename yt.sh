@@ -1,4 +1,5 @@
 #!/bin/ash
+echo $PATH
 
 localDir=/mnt/sda3/Youtube/video/`date +"%Y-%m-%d"`
 echo $localDir
