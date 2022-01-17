@@ -12,6 +12,12 @@
 ./yta.sh https://www.youtube.com/watch?v=Ljvlby3yZFQ
 
 ```
+## download audio and covert to mp3 format
+
+```
+./yta-mp3.sh https://www.youtube.com/watch?v=Ljvlby3yZFQ
+
+```
 
 ## output
 
