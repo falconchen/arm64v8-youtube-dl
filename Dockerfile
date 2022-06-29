@@ -1,9 +1,8 @@
 #
 # Docker for youtube-dl with ffmpeg supported
-# falconchen/arm64v8-yt-dlp
 #
 
-FROM arm64v8/python:3.10.0-slim
+FROM python:3.10.0-slim
 MAINTAINER falcon <me@cellmean.com>
 
 RUN apt update -y \
