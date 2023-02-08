@@ -1,0 +1,60 @@
+#!/usr/bin/env bash
+
+set -x
+
+
+url="${@: -1}" 
+
+sync139=/mnt/sda3/projects/Sync139
+storeDir=$sync139/n1yt/video/`date +"%Y-%m-%d"`
+vid=`docker run -i --rm falconchen/arm64v8-yt-dlp --get-id ${url}`
+localDir=$storeDir/${vid}
+
+nohupOutLog=$sync139/logs/n1yt-yun.log
+
+echo "url: $url"
+echo "locaDir: $localDir"
+
+
+mkdir -p ${localDir} 2>/dev/null
+
+mkdir -p ${nohupOutDir} 2>/dev/null
+
+title=`docker run -i --rm -v ${localDir}:/data falconchen/arm64v8-yt-dlp -e ${url}`
+thumbnail=`docker run -i --rm -v ${localDir}:/data falconchen/arm64v8-yt-dlp --get-thumbnail ${url}`
+thumbnail=${thumbnail//i\.ytimg\.com/txhk\.cellmean.\com\/ytimg}
+thumbnail=${thumbnail//http:/https:}
+echo $thumbnail
+#--get-thumbnail 
+gzipName="${title:0:70}-${vid}.gzip"
+gzipName=${gzipName// /_}
+gzipName=${gzipName//\//_}
+gzipName=${gzipName//|/_}
+gzipName=${gzipName//\"/_}
+gzipName=${gzipName//\'/_}
+
+
+
+docker run -i --rm -v ${localDir}:/data falconchen/arm64v8-yt-dlp \
+-f '22/(bv*[vcodec^=vp9][height<=1024]+ba[acodec=opus])/137+ba[ext=m4a]/137+ba/302+ba[ext=m4a]/302+ba/bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo[ext=mp4]+(258/256/140)/bestvideo[ext=webm]+(250/249)/bestvideo[ext=webm]+bestaudio/mp4/best' \
+"$@" 
+
+icon="✅"
+cd $localDir && gzip -c * >${storeDir}/${gzipName} && rm -rf ${localDir}
+if [[ "$?" -ne "0" ]];then 
+   
+   echo $error
+   error="Error: ${error}"
+   icon="❌"
+
+else
+	error="OK"
+fi
+
+
+sleep 1
+#curl -s https://api.day.app/VpjHojYCZQWMoSWCBxPzbf/"N1:${title}"
+curl  "https://api.day.app/VpjHojYCZQWMoSWCBxPzbf/N1Done"
+exit
+
+

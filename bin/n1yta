@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+#获取当前目录
+SHELL_FOLDER=$(dirname "$0")
+cd $SHELL_FOLDER
+
+echo "n1cmd tail -f $SHELL_FOLDER/nyta.log"
+nohup bash $SHELL_FOLDER/../yta.sh "$@" >>nyta.log 2>&1 &
+exit
+

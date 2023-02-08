@@ -8,7 +8,9 @@ MAINTAINER falcon <me@cellmean.com>
 
 RUN apt update -y \
     && apt install -y ffmpeg \
+    			curl \
                           openssl \
+			  zip \
     #&& pip install --upgrade pip \
     && python3 -m pip install --upgrade yt-dlp \
     && mkdir -p /videos \
