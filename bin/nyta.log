@@ -1480,3 +1480,114 @@ Deleting original file /data/【Bi.Bi Piano】钢琴｜Tears - The Daydream 好�
 [EmbedSubtitle] Subtitles can only be embedded in mp4, mov, m4a, webm, mkv, mka files
 [Exec] Executing command: curl -s https://api.day.app/VpjHojYCZQWMoSWCBxPzbf/N1s/"【Bi.Bi Piano】钢琴｜Tears - The Daydream 好听的轻音乐"?icon=https://d.cellmean.com/media/image/606/94/20062-CFp-m.png
 {"code":200,"message":"success","timestamp":1673864305}[download] Finished downloading playlist: Popular videos
+/mnt/sda3/Youtube/audio/2023-03-29
+[youtube:tab] Extracting URL: https://www.youtube.com/playlist?list=PLIWYFeyLum0-lTaA0RuKWs6o2g2-gCCMs
+[youtube:tab] PLIWYFeyLum0-lTaA0RuKWs6o2g2-gCCMs: Downloading webpage
+[youtube:tab] PLIWYFeyLum0-lTaA0RuKWs6o2g2-gCCMs: Redownloading playlist API JSON with unavailable videos
+[download] Downloading playlist: 【侃侃而谈】细微又寻味的人生道理
+[youtube:tab] Playlist 【侃侃而谈】细微又寻味的人生道理: Downloading 10 items of 10
+[download] Downloading item 1 of 10
+[youtube] Extracting URL: https://www.youtube.com/watch?v=IVoBKAKuWV0
+[youtube] IVoBKAKuWV0: Downloading webpage
+[youtube] IVoBKAKuWV0: Downloading android player API JSON
+[youtube] IVoBKAKuWV0: Downloading player ace4d669
+[info] IVoBKAKuWV0: Downloading 1 format(s): 251
+[info] There's no subtitles for the requested languages
+[SubtitlesConvertor] There aren't any subtitles to convert
+[download] Destination: /data/高知女性的择偶要求并不高，不要恐惧婚姻#窦文涛 #许子东-IVoBKAKuWV0.webm
+[download]   0.0% of   11.27MiB at  314.09KiB/s ETA 00:37[download]   0.0% of   11.27MiB at  461.17KiB/s ETA 00:25[download]   0.1% of   11.27MiB at  596.92KiB/s ETA 00:19[download]   0.1% of   11.27MiB at  924.77KiB/s ETA 00:12[download]   0.3% of   11.27MiB at    1.40MiB/s ETA 00:08[download]   0.5% of   11.27MiB at    1.87MiB/s ETA 00:06[download]   1.1% of   11.27MiB at    1.97MiB/s ETA 00:05[download]   2.2% of   11.27MiB at    2.96MiB/s ETA 00:03[download]   4.4% of   11.27MiB at    4.01MiB/s ETA 00:02[download]   8.9% of   11.27MiB at    5.70MiB/s ETA 00:01[download]  17.7% of   11.27MiB at    5.93MiB/s ETA 00:01[download]  35.5% of   11.27MiB at    4.88MiB/s ETA 00:01[download]  71.0% of   11.27MiB at    3.92MiB/s ETA 00:00[download]  85.9% of   11.27MiB at    3.86MiB/s ETA 00:00[download]  85.9% of   11.27MiB at  Unknown B/s ETA Unknown[download]  85.9% of   11.27MiB at  801.05KiB/s ETA 00:02  [download]  86.0% of   11.27MiB at  932.84KiB/s ETA 00:01[download]  86.0% of   11.27MiB at    1.41MiB/s ETA 00:01[download]  86.2% of   11.27MiB at  102.32KiB/s ETA 00:15[download]  86.5% of   11.27MiB at   72.46KiB/s ETA 00:21[download]  86.9% of   11.27MiB at  128.08KiB/s ETA 00:11[download]  87.9% of   11.27MiB at  223.42KiB/s ETA 00:06[download]  89.9% of   11.27MiB at  381.90KiB/s ETA 00:03[download]  93.8% of   11.27MiB at  598.76KiB/s ETA 00:01[download] 100.0% of   11.27MiB at  897.50KiB/s ETA 00:00[download] 100% of   11.27MiB in 00:00:05 at 2.21MiB/s   
+[EmbedSubtitle] There aren't any subtitles to embed
+[download] Downloading item 2 of 10
+[youtube] Extracting URL: https://www.youtube.com/watch?v=GSEyf7JCxt8
+[youtube] GSEyf7JCxt8: Downloading webpage
+[youtube] GSEyf7JCxt8: Downloading android player API JSON
+[info] GSEyf7JCxt8: Downloading 1 format(s): 251
+[info] There's no subtitles for the requested languages
+[SubtitlesConvertor] There aren't any subtitles to convert
+[download] Destination: /data/僧人角度理解现代社会的躺平、焦虑和烦恼 #窦文涛-GSEyf7JCxt8.webm
+[download]   0.0% of    6.19MiB at  180.61KiB/s ETA 00:35[download]   0.0% of    6.19MiB at  307.82KiB/s ETA 00:20[download]   0.1% of    6.19MiB at  505.23KiB/s ETA 00:12[download]   0.2% of    6.19MiB at  728.57KiB/s ETA 00:08[download]   0.5% of    6.19MiB at    1.23MiB/s ETA 00:05[download]   1.0% of    6.19MiB at    1.78MiB/s ETA 00:03[download]   2.0% of    6.19MiB at    1.75MiB/s ETA 00:03[download]   4.0% of    6.19MiB at    2.63MiB/s ETA 00:02[download]   8.1% of    6.19MiB at    3.80MiB/s ETA 00:01[download]  16.1% of    6.19MiB at    5.90MiB/s ETA 00:00[download]  32.3% of    6.19MiB at    6.30MiB/s ETA 00:00[download]  64.6% of    6.19MiB at    5.28MiB/s ETA 00:00[download] 100.0% of    6.19MiB at    4.29MiB/s ETA 00:00[download] 100% of    6.19MiB in 00:00:01 at 3.52MiB/s   
+[EmbedSubtitle] There aren't any subtitles to embed
+[download] Downloading item 3 of 10
+[youtube] Extracting URL: https://www.youtube.com/watch?v=EC08zOAJdb4
+[youtube] EC08zOAJdb4: Downloading webpage
+[youtube] EC08zOAJdb4: Downloading android player API JSON
+[info] EC08zOAJdb4: Downloading 1 format(s): 251
+[info] There's no subtitles for the requested languages
+[SubtitlesConvertor] There aren't any subtitles to convert
+[download] Destination: /data/少时且壮厉，今昔之感在张掖聊霍去病卫青-EC08zOAJdb4.webm
+[download]   0.0% of    6.12MiB at  178.04KiB/s ETA 00:35[download]   0.0% of    6.12MiB at  319.90KiB/s ETA 00:19[download]   0.1% of    6.12MiB at  460.42KiB/s ETA 00:13[download]   0.2% of    6.12MiB at  646.27KiB/s ETA 00:09[download]   0.5% of    6.12MiB at  483.31KiB/s ETA 00:12[download]   1.0% of    6.12MiB at  924.87KiB/s ETA 00:06[download]   2.0% of    6.12MiB at    1.45MiB/s ETA 00:04[download]   4.1% of    6.12MiB at    1.82MiB/s ETA 00:03[download]   8.2% of    6.12MiB at    2.67MiB/s ETA 00:02[download]  16.3% of    6.12MiB at    3.62MiB/s ETA 00:01[download]  32.7% of    6.12MiB at    4.79MiB/s ETA 00:00[download]  65.4% of    6.12MiB at    6.06MiB/s ETA 00:00[download] 100.0% of    6.12MiB at    4.73MiB/s ETA 00:00[download] 100% of    6.12MiB in 00:00:01 at 3.79MiB/s   
+[EmbedSubtitle] There aren't any subtitles to embed
+[download] Downloading item 4 of 10
+[youtube] Extracting URL: https://www.youtube.com/watch?v=mPN57ZdcDM8
+[youtube] mPN57ZdcDM8: Downloading webpage
+[youtube] mPN57ZdcDM8: Downloading android player API JSON
+[info] mPN57ZdcDM8: Downloading 1 format(s): 251
+[info] There's no subtitles for the requested languages
+[SubtitlesConvertor] There aren't any subtitles to convert
+[download] Destination: /data/梁启超的《少年中国说》是本科幻小说并且真的预言中了#许子东 #窦文涛 #周轶君-mPN57ZdcDM8.webm
+[download]   0.0% of    5.96MiB at   25.97KiB/s ETA 03:55[download]   0.0% of    5.96MiB at   72.66KiB/s ETA 01:24[download]   0.1% of    5.96MiB at  158.49KiB/s ETA 00:38[download]   0.2% of    5.96MiB at  304.50KiB/s ETA 00:20[download]   0.5% of    5.96MiB at  564.80KiB/s ETA 00:10[download]   1.0% of    5.96MiB at    1.01MiB/s ETA 00:05[download]   2.1% of    5.96MiB at    1.27MiB/s ETA 00:04[download]   4.2% of    5.96MiB at    1.70MiB/s ETA 00:03[download]   8.4% of    5.96MiB at    2.65MiB/s ETA 00:02[download]  16.8% of    5.96MiB at    3.73MiB/s ETA 00:01[download]  33.5% of    5.96MiB at    6.20MiB/s ETA 00:00[download]  67.1% of    5.96MiB at    6.57MiB/s ETA 00:00[download] 100.0% of    5.96MiB at    4.65MiB/s ETA 00:00[download] 100% of    5.96MiB in 00:00:02 at 2.74MiB/s   
+[EmbedSubtitle] There aren't any subtitles to embed
+[download] Downloading item 5 of 10
+[youtube] Extracting URL: https://www.youtube.com/watch?v=0p6ThvZyhqc
+[youtube] 0p6ThvZyhqc: Downloading webpage
+[youtube] 0p6ThvZyhqc: Downloading android player API JSON
+[info] 0p6ThvZyhqc: Downloading 1 format(s): 251
+[info] There's no subtitles for the requested languages
+[SubtitlesConvertor] There aren't any subtitles to convert
+[download] Destination: /data/男人与女人思维差异？过去or未来？-0p6ThvZyhqc.webm
+[download]   0.0% of    3.12MiB at  937.90KiB/s ETA 00:03[download]   0.1% of    3.12MiB at  715.75KiB/s ETA 00:04[download]   0.2% of    3.12MiB at  932.75KiB/s ETA 00:03[download]   0.5% of    3.12MiB at    1.24MiB/s ETA 00:02[download]   1.0% of    3.12MiB at    1.93MiB/s ETA 00:01[download]   2.0% of    3.12MiB at    1.42MiB/s ETA 00:02[download]   4.0% of    3.12MiB at    1.96MiB/s ETA 00:01[download]   8.0% of    3.12MiB at    2.35MiB/s ETA 00:01[download]  16.0% of    3.12MiB at    3.87MiB/s ETA 00:00[download]  32.0% of    3.12MiB at    4.87MiB/s ETA 00:00[download]  64.0% of    3.12MiB at    6.12MiB/s ETA 00:00[download] 100.0% of    3.12MiB at    4.33MiB/s ETA 00:00[download] 100% of    3.12MiB in 00:00:01 at 2.93MiB/s   
+[EmbedSubtitle] There aren't any subtitles to embed
+[download] Downloading item 6 of 10
+[youtube] Extracting URL: https://www.youtube.com/watch?v=Qc8w7zcpe84
+[youtube] Qc8w7zcpe84: Downloading webpage
+[youtube] Qc8w7zcpe84: Downloading android player API JSON
+[youtube] Qc8w7zcpe84: Downloading MPD manifest
+[info] Qc8w7zcpe84: Downloading 1 format(s): 251
+[info] There's no subtitles for the requested languages
+[SubtitlesConvertor] There aren't any subtitles to convert
+[download] Destination: /data/真正的爱没有条件，现代社会的爱情关系是有条件的！-Qc8w7zcpe84.webm
+[download]   0.0% of    2.55MiB at   42.77KiB/s ETA 01:01[download]   0.1% of    2.55MiB at  110.75KiB/s ETA 00:23[download]   0.3% of    2.55MiB at  232.20KiB/s ETA 00:11[download]   0.6% of    2.55MiB at  438.59KiB/s ETA 00:05[download]   1.2% of    2.55MiB at  767.34KiB/s ETA 00:03[download]   2.4% of    2.55MiB at    1.31MiB/s ETA 00:01[download]   4.9% of    2.55MiB at    1.62MiB/s ETA 00:01[download]   9.7% of    2.55MiB at    2.74MiB/s ETA 00:00[download]  19.5% of    2.55MiB at    3.31MiB/s ETA 00:00[download]  39.1% of    2.55MiB at    4.85MiB/s ETA 00:00[download]  78.3% of    2.55MiB at    7.48MiB/s ETA 00:00[download] 100.0% of    2.55MiB at    4.83MiB/s ETA 00:00[download] 100% of    2.55MiB in 00:00:00 at 2.87MiB/s   
+[EmbedSubtitle] There aren't any subtitles to embed
+[download] Downloading item 7 of 10
+[youtube] Extracting URL: https://www.youtube.com/watch?v=yMrSEw634Fo
+[youtube] yMrSEw634Fo: Downloading webpage
+[youtube] yMrSEw634Fo: Downloading android player API JSON
+[youtube] yMrSEw634Fo: Downloading MPD manifest
+[info] yMrSEw634Fo: Downloading 1 format(s): 251
+[info] There's no subtitles for the requested languages
+[SubtitlesConvertor] There aren't any subtitles to convert
+[download] Destination: /data/天文台研究员介绍的赤道式望远镜是什么样的？｜ 聊天文-yMrSEw634Fo.webm
+[download]   0.0% of    3.91MiB at   22.13KiB/s ETA 03:01[download]   0.1% of    3.91MiB at   58.92KiB/s ETA 01:07[download]   0.2% of    3.91MiB at  127.57KiB/s ETA 00:31[download]   0.4% of    3.91MiB at  258.25KiB/s ETA 00:15[download]   0.8% of    3.91MiB at  503.39KiB/s ETA 00:07[download]   1.6% of    3.91MiB at  965.37KiB/s ETA 00:04[download]   3.2% of    3.91MiB at    1.24MiB/s ETA 00:03[download]   6.4% of    3.91MiB at    1.46MiB/s ETA 00:02[download]  12.8% of    3.91MiB at    1.93MiB/s ETA 00:01[download]  25.6% of    3.91MiB at    2.39MiB/s ETA 00:01[download]  51.2% of    3.91MiB at    3.31MiB/s ETA 00:00[download] 100.0% of    3.91MiB at    3.34MiB/s ETA 00:00[download] 100% of    3.91MiB in 00:00:01 at 2.40MiB/s   
+[EmbedSubtitle] There aren't any subtitles to embed
+[download] Downloading item 8 of 10
+[youtube] Extracting URL: https://www.youtube.com/watch?v=5UmmtaZOGPw
+[youtube] 5UmmtaZOGPw: Downloading webpage
+[youtube] 5UmmtaZOGPw: Downloading android player API JSON
+[info] 5UmmtaZOGPw: Downloading 1 format(s): 251
+[info] There's no subtitles for the requested languages
+[SubtitlesConvertor] There aren't any subtitles to convert
+[download] Destination: /data/师弟“打脸”霍金黑暗森林法则；并称可能遇见外星人的几率很小-5UmmtaZOGPw.webm
+[download]   0.0% of    3.25MiB at  362.33KiB/s ETA 00:09[download]   0.1% of    3.25MiB at  399.47KiB/s ETA 00:08[download]   0.2% of    3.25MiB at  687.04KiB/s ETA 00:04[download]   0.5% of    3.25MiB at    1.12MiB/s ETA 00:02[download]   0.9% of    3.25MiB at    1.83MiB/s ETA 00:01[download]   1.9% of    3.25MiB at    3.11MiB/s ETA 00:01[download]   3.8% of    3.25MiB at    2.19MiB/s ETA 00:01[download]   7.7% of    3.25MiB at    3.35MiB/s ETA 00:00[download]  15.4% of    3.25MiB at    4.52MiB/s ETA 00:00[download]  30.7% of    3.25MiB at    6.49MiB/s ETA 00:00[download]  61.5% of    3.25MiB at    7.38MiB/s ETA 00:00[download] 100.0% of    3.25MiB at    6.30MiB/s ETA 00:00[download] 100% of    3.25MiB in 00:00:00 at 3.35MiB/s   
+[EmbedSubtitle] There aren't any subtitles to embed
+[download] Downloading item 9 of 10
+[youtube] Extracting URL: https://www.youtube.com/watch?v=pCpbkArcIjU
+[youtube] pCpbkArcIjU: Downloading webpage
+[youtube] pCpbkArcIjU: Downloading android player API JSON
+[youtube] pCpbkArcIjU: Downloading MPD manifest
+[info] pCpbkArcIjU: Downloading 1 format(s): 251
+[info] There's no subtitles for the requested languages
+[SubtitlesConvertor] There aren't any subtitles to convert
+[download] Destination: /data/聊天文｜ 国家天文台首席研究员告诉你全世界最适合天文台观星-pCpbkArcIjU.webm
+[download]   0.0% of    3.15MiB at   40.27KiB/s ETA 01:20[download]   0.1% of    3.15MiB at  102.49KiB/s ETA 00:31[download]   0.2% of    3.15MiB at  216.64KiB/s ETA 00:14[download]   0.5% of    3.15MiB at  431.39KiB/s ETA 00:07[download]   1.0% of    3.15MiB at  778.08KiB/s ETA 00:04[download]   2.0% of    3.15MiB at  800.59KiB/s ETA 00:03[download]   3.9% of    3.15MiB at    1.43MiB/s ETA 00:02[download]   7.9% of    3.15MiB at    1.43MiB/s ETA 00:02[download]  15.9% of    3.15MiB at    2.48MiB/s ETA 00:01[download]  31.7% of    3.15MiB at    3.96MiB/s ETA 00:00[download]  63.5% of    3.15MiB at    6.40MiB/s ETA 00:00[download] 100.0% of    3.15MiB at    8.39MiB/s ETA 00:00[download] 100% of    3.15MiB in 00:00:00 at 4.42MiB/s   
+[EmbedSubtitle] There aren't any subtitles to embed
+[download] Downloading item 10 of 10
+[youtube] Extracting URL: https://www.youtube.com/watch?v=0qS_pn49fiM
+[youtube] 0qS_pn49fiM: Downloading webpage
+[youtube] 0qS_pn49fiM: Downloading android player API JSON
+[info] 0qS_pn49fiM: Downloading 1 format(s): 251
+[info] There's no subtitles for the requested languages
+[SubtitlesConvertor] There aren't any subtitles to convert
+[download] Destination: /data/科学家聊科幻电影｜ 从科学家的角度看《星际穿越》科幻是自由的 科学是严谨的-0qS_pn49fiM.webm
+[download]   0.0% of    6.04MiB at   34.97KiB/s ETA 02:57[download]   0.0% of    6.04MiB at   90.04KiB/s ETA 01:08[download]   0.1% of    6.04MiB at  181.76KiB/s ETA 00:34[download]   0.2% of    6.04MiB at  344.94KiB/s ETA 00:17[download]   0.5% of    6.04MiB at  660.56KiB/s ETA 00:09[download]   1.0% of    6.04MiB at    1.22MiB/s ETA 00:04[download]   2.1% of    6.04MiB at    1.85MiB/s ETA 00:03[download]   4.1% of    6.04MiB at    2.31MiB/s ETA 00:02[download]   8.3% of    6.04MiB at    3.29MiB/s ETA 00:01[download]  16.5% of    6.04MiB at    5.05MiB/s ETA 00:00[download]  33.1% of    6.04MiB at    7.75MiB/s ETA 00:00[download]  66.2% of    6.04MiB at    5.91MiB/s ETA 00:00[download] 100.0% of    6.04MiB at    3.72MiB/s ETA 00:00[download] 100% of    6.04MiB in 00:00:01 at 3.04MiB/s   
+[EmbedSubtitle] There aren't any subtitles to embed
+[download] Finished downloading playlist: 【侃侃而谈】细微又寻味的人生道理

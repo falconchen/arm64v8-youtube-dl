@@ -1,0 +1,40 @@
+#!/bin/bash
+
+# 判断参数数量是否正确
+if [ "$#" -lt 1 ]
+then
+  echo "Usage: $0 <URL> [audio|video (default)]"
+  exit 1
+fi
+
+# 接收参数
+URL=$1
+DOWNLOAD_TYPE=${2:-video}
+
+# 判断是否为播放列表
+if [[ $URL == *"&list="* ]]; then
+  # 下载整个播放列表
+  if [[ $DOWNLOAD_TYPE == "audio" ]]; then
+    # 下载音频
+    yt-dlp --yes-playlist --extract-audio --audio-format mp3 --output '/data/%(playlist)s/%(title)s.%(ext)s' "$URL"
+  else
+    # 下载视频
+    yt-dlp --yes-playlist --output '/data/%(playlist)s/%(title)s.%(ext)s' "$URL"
+  fi
+  # 压缩整个播放列表
+  playlist_name=$(yt-dlp --get-filename --yes-playlist --output '%(playlist)s' "$URL" | head -1)
+  cd /data && zip -r "${playlist_name}.zip" "${playlist_name}"
+else
+  # 下载单个视频
+  if [[ $DOWNLOAD_TYPE == "audio" ]]; then
+    # 下载音频
+    yt-dlp --extract-audio --audio-format mp3 --output '/data/%(title)s.%(ext)s' "$URL"
+  else
+    # 下载视频
+    yt-dlp --output '/data/%(title)s.%(ext)s' "$URL"
+  fi
+  # 压缩单个视频
+  video_title=$(yt-dlp --get-filename --output '%(title)s' "$URL" | head -1)
+  cd /data && zip "${video_title}.zip" "${video_title}.*"
+fi
+

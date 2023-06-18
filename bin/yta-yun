@@ -1,0 +1,92 @@
+#!/usr/bin/env bash
+
+set -x
+
+
+url="${@: -1}" 
+
+sync139=/mnt/sda3/projects/Sync139
+storeDir=$sync139/n1yt/audio/`date +"%Y-%m-%d"`
+vid=`docker run -i --rm falconchen/arm64v8-yt-dlp --get-id ${url}`
+
+nohupOutLog=$sync139/logs/n1yt-yun.log
+
+echo "url: $url"
+echo "locaDir: $localDir"
+
+mkdir -p ${nohupOutDir} 2>/dev/null
+
+matchList=`echo $vid | grep $'\n' | grep " "`
+#start playlist download
+if [ "$matchList" != "" ];then
+
+export LC_ALL=en_US.UTF-8
+playlistName=$(yt-dlp --no-warnings --dump-single-json $1 | jq -r '.title')
+playlistName=${playlistName// /_}
+playlistName=${playlistName//\//_}
+playlistName=${playlistName//|/_}
+playlistName=${playlistName//\"/_}
+playlistName=${playlistName//\'/_}
+localDir=$storeDir/$playlistName
+
+mkdir -p ${localDir} 2>/dev/null
+echo "download playlist"
+
+docker run -i --rm -v ${localDir}:/data falconchen/arm64v8-yt-dlp \
+-v /root/arm64v8-youtube-dl/yta-dlp.conf:/etc/yt-dlp.conf \
+--download-archive archive.txt -o '%(title.0:60)s-%(id)s.%(ext)s' \
+-f bestaudio  --audio-quality 0 "${url}"
+
+sleep 1
+
+icon="✅"
+curl -s  https://api.day.app/VpjHojYCZQWMoSWCBxPzbf/${icon}playlist/${playlistName}
+exit
+fi
+# end of playlist download
+
+localDir=$storeDir/.${vid}
+mkdir -p ${localDir} 2>/dev/null
+title=`docker run -i --rm -v ${localDir}:/data falconchen/arm64v8-yt-dlp -e ${url}`
+thumbnail=`docker run -i --rm -v ${localDir}:/data falconchen/arm64v8-yt-dlp --get-thumbnail ${url}`
+thumbnail=${thumbnail//i\.ytimg\.com/txhk\.cellmean.\com\/ytimg}
+thumbnail=${thumbnail//http:/https:}
+echo $thumbnail
+
+docker run -i --rm -v ${localDir}:/data \
+-v /root/arm64v8-youtube-dl/yta-dlp.conf:/etc/yt-dlp.conf \
+falconchen/arm64v8-yt-dlp \
+-f bestaudio  --audio-quality 0 "$@"
+
+icon="✅"
+cd $localDir 
+
+size=`du -sh ${localDir} | awk '{print $1}'`
+
+find . -type f -name "* *" -print |
+while read name; do
+na=$(echo $name | tr ' ' '_')
+if [[ $name != $na ]]; then
+mv "$name" $na
+fi
+done
+
+mv  *.webm $storeDir  && rm -rf ${localDir}
+
+if [[ "$?" -ne "0" ]];then 
+   
+   echo $error
+   error="Error: ${error}"
+   icon="❌"
+
+else
+	error="OK"
+fi
+
+
+sleep 1
+#curl -s https://api.day.app/VpjHojYCZQWMoSWCBxPzbf/"N1:${title}"
+#curl -s  https://api.day.app/VpjHojYCZQWMoSWCBxPzbf/${icon}⚙️${size}/🔊${title//[ \#]/_}?icon=${thumbnail//\?/#}
+exit
+
+

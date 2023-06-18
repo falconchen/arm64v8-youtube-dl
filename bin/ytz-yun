@@ -1,0 +1,51 @@
+#!/bin/bash
+
+set -x
+WORK_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+source "$WORK_DIR/../func.sh"
+source "$WORK_DIR/../conf.sh"
+
+
+# 判断参数数量是否正确
+if [ "$#" -lt 1 ]
+then
+  echo "Usage: $0 <URL> [audio|video (default)]"
+  exit 1
+fi
+
+echo $storeDir
+# 接收参数
+URL=$1
+DOWNLOAD_TYPE=${2:-video}
+
+
+# 判断是否为播放列表
+if [[ $URL == *"list="* ]]; then
+
+  URL=$(echo "$URL" | sed -E 's/v=[^&]+//;s/&list=/\?list=/')
+  playlistname=`yt-dlp --get-filename --yes-playlist --output '%(playlist)s' "$URL" 2>/dev/null | head -1`
+  playlistname="$(sanitize_filename "$playlistname")"
+  playlistname=${playlistname}【$DOWNLOAD_TYPE】
+  # 下载整个播放列表
+  if [[ $DOWNLOAD_TYPE == "audio" ]]; then
+    # 下载音频
+    #yt-dlp-ng "$storeDir"  --yes-playlist --extract-audio --audio-format mp3 --output "/data/${playlistname}/%(title)s.%(ext)s" "$URL"
+    #yta-yun "$URL"
+    yt-dlp-ng "$storeDir"  -f bestaudio --audio-quality 0 --output "/data/${playlistname}/%(title)s.%(ext)s"  "$URL"
+  else
+    # 下载视频
+    yt-dlp-ng "$storeDir" --yes-playlist --output "/data/${playlistname}/%(title)s.%(ext)s" "$URL"
+  fi
+  # 压缩整个播放列表
+  #playlist_name=$(yt-dlp-ng --get-filename --yes-playlist --output '%(playlist)s' "$URL" | head -1)
+
+  cd $storeDir && rename_files `pwd`/$playlistname && zip -r "${playlistname}.zip" "${playlistname}"
+else
+
+  if [[ $DOWNLOAD_TYPE == "audio" ]]; then
+    source ${WORK_DIR}/yta-yun $URL
+  else
+    source ${WORK_DIR}/ytvz-yun $URL
+  fi
+fi
+

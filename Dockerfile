@@ -11,11 +11,18 @@ RUN apt update -y \
     			curl \
                           openssl \
 			  zip \
+			  locales \
     #&& pip install --upgrade pip \
     && python3 -m pip install --upgrade yt-dlp \
     && mkdir -p /videos \
     && mkdir -p /audios \
     && rm -rf /root/.cache/
+
+RUN sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen && \
+    locale-gen
+ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US:en
+ENV LC_ALL en_US.UTF-8
 
 #COPY ./youtube-dl.conf /etc/youtube-dl.conf
 COPY ./yt-dlp.conf /etc/yt-dlp.conf
