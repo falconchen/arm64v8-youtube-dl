@@ -26,6 +26,7 @@ if [[ $URL == *"list="* ]]; then
   playlistname=`yt-dlp --get-filename --yes-playlist --output '%(playlist)s' "$URL" 2>/dev/null | head -1`
   playlistname="$(sanitize_filename "$playlistname")"
   playlistname=${playlistname}【$DOWNLOAD_TYPE】
+  playlistname=${playlistname}$(date +"%m%d%H%M")
   # 下载整个播放列表
   if [[ $DOWNLOAD_TYPE == "audio" ]]; then
     # 下载音频

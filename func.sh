@@ -11,7 +11,7 @@ function yt-dlp-ng() {
   shift
   docker run -i --rm -v "${localDir}:/data" falconchen/arm64v8-yt-dlp \
     -v /root/arm64v8-youtube-dl/ytl-dlp.conf:/etc/yt-dlp.conf \
-    -f '(bv*[vcodec^=vp9][height>=1024]+ba[acodec=opus])/22/137+ba[ext=m4a]/137+ba/302+ba[ext=m4a]/302+ba/bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo[ext=mp4]+(258/256/140)/bestvideo[ext=webm]+(250/249)/bestvideo[ext=webm]+bestaudio/mp4/best' \
+    -f '(bv*[vcodec^=vp9][height>=1024]+ba[acodec=opus])/bv*+ba/22/137+ba[ext=m4a]/137+ba/302+ba[ext=m4a]/302+ba/bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo[ext=mp4]+(258/256/140)/bestvideo[ext=webm]+(250/249)/bestvideo[ext=webm]+bestaudio/mp4/best' \
     "$@"
 }
 
